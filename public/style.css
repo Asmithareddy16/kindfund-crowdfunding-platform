@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f8f5;
+    color: #26352c;
+}
+
+header {
+    background: #176b4d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav {
+    background: #104b37;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 22px 0;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.hero {
+    text-align: center;
+    background: #dff4e7;
+    padding: 45px 20px;
+}
+
+.btn, button {
+    display: inline-block;
+    background: #176b4d;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+button:hover, .btn:hover {
+    background: #104b37;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccd8cf;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.campaign-card {
+    border: 1px solid #dce8df;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.campaign-card h3 {
+    color: #176b4d;
+}
+
+.progress {
+    height: 10px;
+    background: #e2e8e3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+    background: #35a66f;
+}
+
+#message {
+    font-weight: bold;
+}
+
+footer {
+    background: #104b37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 8px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

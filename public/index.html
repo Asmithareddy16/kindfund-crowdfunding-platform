@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindFund - Crowdfunding for Good</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KindFund ❤️</h1>
+        <p>Together, we can make a difference.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#campaigns">Campaigns</a>
+        <a href="#account">Account</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Small Donations. Big Changes.</h2>
+            <p>Support meaningful causes and help communities grow.</p>
+            <a class="btn" href="#campaigns">Explore Campaigns</a>
+        </section>
+
+        <section id="account">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input id="regName" placeholder="Full name" required>
+                <input id="regEmail" type="email" placeholder="Email" required>
+                <input id="regPassword" type="password" placeholder="Password (minimum 6 characters)" required minlength="6">
+                <select id="regRole">
+                    <option value="donor">Donor</option>
+                    <option value="ngo">NGO</option>
+                </select>
+                <button type="submit">Create Account</button>
+            </form>
+
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input id="loginEmail" type="email" placeholder="Email" required>
+                <input id="loginPassword" type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <div id="userInfo"></div>
+            <button id="logoutBtn" hidden>Logout</button>
+            <p id="message" role="status"></p>
+        </section>
+
+        <section id="createCampaign" hidden>
+            <h2>Create a Campaign</h2>
+            <form id="campaignForm">
+                <input id="campaignTitle" placeholder="Campaign title" required>
+                <textarea id="campaignDescription" placeholder="Describe your cause" required></textarea>
+                <input id="campaignGoal" type="number" min="1" step="0.01" placeholder="Goal amount in ₹" required>
+                <button type="submit">Create Campaign</button>
+            </form>
+        </section>
+
+        <section id="campaigns">
+            <h2>Our Campaigns</h2>
+            <div id="campaignList" class="campaign-grid">
+                <p>Loading campaigns...</p>
+            </div>
+        </section>
+
+        <section id="history" hidden>
+            <h2>My Donation History</h2>
+            <div id="donationHistory"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>KindFund © 2026 | Made for a better world 🌱</p>
+        <p>Donations in this student project are simulated. No real money is charged.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
